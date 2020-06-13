@@ -3,6 +3,7 @@
 <head>
   <title>Giphy Search</title>
   <script src="https://unpkg.com/vue"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 </head>
 <body>
   <div id="app">
@@ -11,6 +12,9 @@
     <button v-on:click="searchGiphy">Search</button>
     <br>
     {{finUrl}}
+    <br><br>
+    <searchresult :info="info" :start="start"></searchresult>
+
   </div>
 
 
