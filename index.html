@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Giphy Search</title>
+  <script src="https://unpkg.com/vue"></script>
+</head>
+<body>
+  <div id="app">
+  <h1> GIPHY Search </h1>
+  <input v-model="q" placeholder="Search Keyword">
+    <button v-on:click="searchGiphy">Search</button>
+    <br>
+    {{finUrl}}
+  </div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src = "main.js"></script>
+
+</body>
+</html>
